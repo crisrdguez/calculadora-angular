@@ -11,7 +11,7 @@
           <div class="input-group-prepend">
 
           </div>
-          <input type="text" class="form-control" aria-label="Text input" disabled> <!--Al agregar class="form-control" el input ocupara el div-->
+          <input type="text" class="form-control" #box (keyup.enter)="calcvalue(box.value)" [(ngModel)]="screen" aria-label="Text input"> <!--Al agregar class="form-control" el input ocupara el div-->
         </div>
       </div>
 
@@ -19,31 +19,36 @@
 
         <b>
           <h1>
-            <input type="button" value="1">
-            <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="+">
+            <input type="button" value="7" (click)="displayNumber('7')">
+            <input type="button" value="8" (click)="displayNumber('8')">
+            <input type="button" value="9" (click)="displayNumber('9')">
+            <input type="button" value="+" (click)="displayNumber('+')">
           </h1>
 
           <h1>
-            <input type="button" value="4">
-            <input type="button" value="5">
-            <input type="button" value="6">
-            <input type="button" value="-">
+            <input type="button" value="4" (click)="displayNumber('4')">
+            <input type="button" value="5" (click)="displayNumber('5')">
+            <input type="button" value="6" (click)="displayNumber('6')">
+            <input type="button" value="-" (click)="displayNumber('-')">
           </h1>
 
           <h1>
-            <input type="button" value="7">
-            <input type="button" value="8">
-            <input type="button" value="9">
-            <input type="button" value="*">
+            <input type="button" value="1" (click)="displayNumber('1')">
+            <input type="button" value="2" (click)="displayNumber('2')">
+            <input type="button" value="4" (click)="displayNumber('4')">
+            <input type="button" value="*" (click)="displayNumber('*')">
           </h1>
 
           <h1>
-            <input type="button" value="0">
-            <input type="button" value="/">
-            <input type="button" value="=">
-            <input type="button" value="C">
+            <input type="button" value="0" (click)="displayNumber('0')">
+            <input type="button" value="." (click)="displayNumber('.')">
+            <input type="button" value="C" (click)="clear()">
+            <input type="button" value="/" (click)="displayNumber('/')">
+          </h1>
+
+          <h1>
+            <input type="button" value="back" (click)="back()">
+            <input type="button" value="=" (click)="equals()" style="width: 300px;">
           </h1>
         </b>
 

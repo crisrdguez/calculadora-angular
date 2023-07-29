@@ -23,6 +23,7 @@
     margin:2px;
     padding:12px;
     border-radius:20px;
+    background-image: url(../assets/img/fondo2.jpg);
 
 }
 
@@ -32,9 +33,10 @@
 }
 
 .scroll{
-    height: 250px;
-    max-height: 250px;
+    height: 260px;
+    max-height: 260px;
     overflow-y:auto ;
+    background-color: black;
 }
 
 .card{
