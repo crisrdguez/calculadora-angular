@@ -44,3 +44,9 @@
     background-color: black;
     border:1px dashed whitesmoke;
 }
+
+.listHistory{
+    font-size: xx-large;
+    margin-top: 10px;
+    color:rgb(112,239,239);
+}
