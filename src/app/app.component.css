@@ -1,52 +1,74 @@
-
-
-/*Numeros*/
-.container input{
+/* Numeros */
+.container input {
     background: black;
-    color:rgb(6,162,160);
+    color: rgb(6, 162, 160);
     height: 50px;
     width: 100px;
     border-radius: 10px;
-    border:1px dashed whitesmoke;
-    margin:2px;
+    border: 1px dashed whitesmoke;
+    margin: 2px;
     font-size: xx-large;
-}
-
-.container input:hover{
-    color:rgb(112,239,239);
+  }
+  
+  .container input:hover {
+    color: rgb(112, 239, 239);
     font-weight: bold;
-}
-
-/*borde calculadora*/
-.full{
-    border:10px solid rgb(76,240,237);
-    margin:2px;
-    padding:12px;
-    border-radius:20px;
+  }
+  
+  /* Borde calculadora */
+  .full {
+    
+    border: 10px solid rgb(76, 240, 237);
+    margin: 2px;
+    padding: 12px;
+    border-radius: 20px;
     background-image: url(../assets/img/fondo2.jpg);
-
-}
-
-.input[type="text"]{
-    color:white;
+  }
+  
+  .input[type="text"] {
+    color: white;
     text-align: center;
-}
-
-.scroll{
+  }
+  
+  .scroll {
     height: 260px;
     max-height: 260px;
-    overflow-y:auto ;
+    overflow-y: auto;
     background-color: black;
-}
-
-.card{
-    margin-top:22px;
+  }
+  
+  .card {
+    margin-top: 22px;
     background-color: black;
-    border:1px dashed whitesmoke;
-}
-
-.listHistory{
+    border: 1px dashed whitesmoke;
+  }
+  
+  .listHistory {
     font-size: xx-large;
     margin-top: 10px;
-    color:rgb(112,239,239);
+    color: rgb(112, 239, 239);
+  }
+  
+  /* Estilos para los botones */
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 5px;
+  }
+
+  @media (max-width: 767px) {
+    .container {
+        padding: 10px; /* Agrega espacio alrededor de la calculadora */
+    }
+
+    .container input {
+        width: 70px; /* Reduce el ancho de los botones */
+        height: 40px; /* Reduce la altura de los botones */
+        font-size: medium; /* Reduce el tamaño de fuente */
+    }
+
+    .full {
+        border: 5px solid rgb(76, 240, 237); /* Reduce el grosor del borde */
+        max-width: 900px;
+    }
 }
