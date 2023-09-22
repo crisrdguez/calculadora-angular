@@ -56,19 +56,17 @@
     gap: 5px;
   }
 
-  @media (max-width: 767px) {
-    .container {
-        padding: 10px; /* Agrega espacio alrededor de la calculadora */
-    }
+  .button-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button-row input {
+    width: calc(25% - 5px); /* Ajusta el ancho de los botones */
+    height: 60px; /* Ajusta la altura de los botones */
+    font-size: 24px; /* Ajusta el tamaño de fuente */
+    margin-bottom: 5px;
+  }
 
-    .container input {
-        width: 70px; /* Reduce el ancho de los botones */
-        height: 40px; /* Reduce la altura de los botones */
-        font-size: medium; /* Reduce el tamaño de fuente */
-    }
-
-    .full {
-        border: 5px solid rgb(76, 240, 237); /* Reduce el grosor del borde */
-        max-width: 900px;
-    }
-}
